@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- External Stylesheets -->
         <title>Restaurant Website</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Custom Stylesheet -->
         <link rel="stylesheet" href="styles.css">
     </head>
 <body>
@@ -17,9 +20,10 @@
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about us">About us</a></li>
-                
+                <li><a href="#Our Restaurants">Our Restaurants</a></li> 
             </ul>
         </nav>
+        <button onclick="order()">Order Online</button>
     </header>
     <section id="home">
         <h2>Welcome to Delicious Restaurant!</h2>
@@ -51,16 +55,33 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-    <footer>
-       <!-- Social media icons block -->
-<ul class="social-icons">
-    <li><a href="https://www.instagram.com/yourrestaurant/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="https://www.facebook.com/yourrestaurant/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="https://twitter.com/yourrestaurant/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-</ul>
-        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <!-- Social Media Icons Block -->
+      <div class="social-icons">
+        <ul aria-label="Social media links">
+          <li>
+            <a href="https://www.instagram.com/yourrestaurant/" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-instagram" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/yourrestaurant/" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-facebook" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/yourrestaurant/" target="_blank" rel="noopener noreferrer" class="btn btn-icon btn-twitter" aria-label="Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright Information -->
+      <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
+    
+    <!-- Script Tag -->
+    <script src="script.js" defer></script>
 </body>
 </html>
