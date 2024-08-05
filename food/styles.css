@@ -36,6 +36,7 @@ nav ul {
   display: flex;
   padding-left: 20px;
   padding-right: 20px; /* add some padding to the right as well */
+  font-weight: bold;
 
 }
 
@@ -79,6 +80,36 @@ nav ul li a:hover::after {
 section {
   padding: 50px 20px;
   text-align: center;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: none;
+}
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #23527c;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* Menu Item Styles */
