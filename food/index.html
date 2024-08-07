@@ -18,12 +18,23 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#menu" class="dropdown-toggle" data-toggle="dropdown">Menu <i class="fas fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#Seafood">Seafood</a></li>
+                      <li><a href="#Sushi">Sushi</a></li>
+                      <li><a href="#Kids">Kids</a></li>
+                      <li><a href="#Drinks">Drinks</a></li>
+                      <li><a href="#Dessert">Dessert</a></li>
+                      <li><a href="#Season selection">Season Selection</a></li>
+                    </ul>
+                  </li>
                 <li><a href="#about us">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#Our Restaurants">Our Restaurants</a></li> 
             </ul>
         </nav>
+
         <!--order online button-->
         <button type="button" class="btn btn-secondary">Order Online</button>
 
@@ -40,11 +51,31 @@
             <button onclick="order()">Order Now</button>
         </div>
         <div class="menu-item">
-            <h3>Another Dish</h3>
+            <h3>New dishes</h3>
             <p>Description of another dish.</p>
             <button onclick="order()">Order Now</button>
         </div>
+        <div class="menu-item">
+            <h3>Popular dishes</h3>
+            <p>Description of another dish.</p>
+            <button onclick="order()"> Order Now</button>
+        </div>
     </section>
+
+    <section id ="about us">
+        <h2>About Us</h2>
+        <div class="about-box">
+            <img src="" alt="">
+        <p>“Delicious Restaurant, the world feels like a bubbling Italian Restaurant, with an infinite strand of pasta connecting everything and everyone.” </p>
+        </div>
+    </section>
+
+    <section id = "Our Restaurants">
+        <h2>Find a Restaurant</h2>
+        
+
+    </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Reach out to us for reservations or any inquiries.</p>
