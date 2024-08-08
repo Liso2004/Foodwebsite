@@ -147,19 +147,94 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Social Media Icons */
-.social-icon {
-  font-size: 24px;
+.search-input {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  width: 50%; /* half width */
+  margin: 0 auto; /* center horizontally */
+  position: relative; /* for absolute positioning of search button */
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+.search-button i {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.search-input::placeholder {
   text-align: center;
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+.search-input:focus {
+  padding-right: 2.5rem;
+}
+
+.search-input:focus + .search-button {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+.search-input:focus + .search-button i {
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* add search icon and placeholder text */
+.search-input {
+  background-image: url("search-icon.png"); /* replace with your search icon */
+  background-size: 1rem;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.search-results {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center; /* center align items */
+  align-items: center; /* vertically center items */
   padding: 10px;
   margin: 10px;
   border-radius: 50%;
-  background-color: #333;
   color: #fff;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.social-icon:hover {
-  background-color: #f1e9e9;
+.social-icons:hover {
+  background-color: #333;
+}
+
+.social-icons:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #333;
+}
+
+/* add gap between items */
+.social-icons > * {
+  margin: 0 20px; /* add 10px margin to the left and right of each item */
 }
 
 /* Form Styles */
