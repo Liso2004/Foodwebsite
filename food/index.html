@@ -40,9 +40,14 @@
 
     </header>
     <section id="home">
+        <div class="about-image">
         <h2>Welcome to Delicious Restaurant!</h2>
-        <p>Enjoy our delicious dishes made with love.</p>
+        <p>Enjoy our delicious dishes made with love
+            no matter the craving we have something for everyone.</p>
+        </div>
     </section>
+    
+    <!-- menu Section -->
     <section id="menu">
         <h2>Our Menu</h2>
         <div class="menu-item">
@@ -62,26 +67,33 @@
         </div>
     </section>
 
+<!-- About us section --> 
     <section id ="about us">
         <h2>About Us</h2>
-        <div class="about-box">
-            <img src="" alt="">
-        <p>“Delicious Restaurant, the world feels like a bubbling Italian Restaurant, with an infinite strand of pasta connecting everything and everyone.” </p>
+        <div class="text-styling"
+        <p>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type 
+        specimen book. It has survived not only five centuries, but also the leap into 
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 
+        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+        recently with desktop publishing software like Aldus PageMaker including versions of 
+        Lorem Ipsum. </p> 
+    </div>
+        <div class="about-image">
+       <img src="" alt="">
         </div>
     </section>
-<!-- Search Section -->
-<section id="search">
-    <h2>Find a Restaurant</h2>
-    <form id="restaurant-search">
-      <input type="search" id="search-input" placeholder="Search for city, area or restaurant...">
-      <button id="search-button">Search</button>
-    </form>
-    <ul class="dropdown-resultspreview">
-    <div id="search-results"></div>
 
-    </ul>
-  </section>
-  
+<!-- Search Section -->
+<section aria-label="Search for a restaurant" id="search">
+    <h2>Find a Restaurant</h2>
+    <form id="restaurant-search" role="search">
+      <input type="search" id="search-input" placeholder="Search for a city, area or restaurant."
+      ><button id="search-button" type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+    </form>
+    <ul id="search-results" class="dropdown-results-preview" aria-live="polite"></ul>
+</section>
 
     <section id="contact">
         <h2>Contact Us</h2>
