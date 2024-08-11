@@ -19,6 +19,16 @@ h1 {
   display: inline-block;
 }
 
+
+ .hero-image{
+ background-color:#cccccc;
+ background-position: right;
+ width: 180vh;
+ height: 50vh; 
+ background-repeat: no-repeat;
+  background-image: url('images/header.jpg');
+}
+
 /* Header Styles */
 header {
   background-color: #333;
@@ -131,8 +141,21 @@ section {
   transition: background-color 0.3s ease;
 }
 
+
 .menu-item button:hover {
   background-color: #555;
+}
+
+.text-box {
+  justify-content: left;
+  background-size: 100% 350px; /* resize background image to 100% width and 350px height */
+  border: 1px solid #333;
+  height: 350px;
+  margin: 30px;
+  display: block;
+  width: 400px;
+  background-color: #faf5f5;
+  box-shadow: 0 0 10px #555; /* added x and y offset to box-shadow */
 }
 
 /* About us styling */
@@ -149,17 +172,18 @@ section {
   height: 10px;
   border: 1px solid whitesmoke;
 }
- .about-image{
-justify-content: left;
-border: 1px solid #333;
-height: 350px;;
-margin: 30px;
-display:block;
-width: 350px;
-background-color: #faf5f5;
-box-shadow: #555;
- }
-
+.about-image {
+  justify-content: left;
+  background-image: url('images/about.jpg');
+  background-size: 100% 350px; /* resize background image to 100% width and 350px height */
+  border: 1px solid #333;
+  height: 350px;
+  margin: 30px;
+  display: block;
+  width: 400px;
+  background-color: #faf5f5;
+  box-shadow: 0 0 10px #555; /* added x and y offset to box-shadow */
+}
  .search-container {
   display: flex;
   justify-content: flex-end;
@@ -267,4 +291,8 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+/* styling of sections*/
+.ourRestaurant-background {
+  background-color:#6d6c6c;
 }
