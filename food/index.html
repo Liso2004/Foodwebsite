@@ -36,7 +36,7 @@
         </nav>
 
         <!--order online button-->
-        <button type="button" class="btn btn-secondary">Order Online</button>
+        <button type="button" class="btn btn-secondary"> <button onclick = "Order()"> Order Online"</button>
 
     </header>
     <section id="home" class="home-background">
@@ -72,23 +72,23 @@
     </section>
 
 <!-- About us section --> 
-    <section id ="about us"class="aboutus-background">
-        <h2>About Us</h2>
-        <div class="text-styling"
-        <p>orem Ipsum is simply dummy text of the printing and typesetting industry. 
+<section id="about-us" class="aboutus-background">
+    <h2>About Us</h2>
+    <div class="text-styling">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         when an unknown printer took a galley of type and scrambled it to make a type 
         specimen book. It has survived not only five centuries, but also the leap into 
         electronic typesetting, remaining essentially unchanged. It was popularised in the 
         1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
         recently with desktop publishing software like Aldus PageMaker including versions of 
-        Lorem Ipsum. </p> 
+        Lorem Ipsum.</p>
     </div>
-        <div class="about-image">
-       <img src="" alt="">
-        </div>
-    </section>
-
+    <div class="about-image">
+      <img src="about-image.jpg" alt=>
+    </div>
+  </section>
+  
 <!-- Search Section -->
  <section id ="Our Restaurants" class="ourRestaurant-background">
 <section aria-label="Search for a restaurant" id="search">
@@ -100,32 +100,33 @@
     <ul id="search-results" class="dropdown-results-preview" aria-live="polite"></ul>
 </section>
  </section>
-    <section id="contact"class="contact-background">
-        <h2>Contact Us</h2>
-        <p>Reach out to us for reservations or any inquiries.</p>
-        <form id="contact-form" onsubmit="submitForm(event)">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <!-- Contact section -->
+<section id="contact" class="contact-background">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for reservations or any inquiries.</p>
+    <form id="contact-form" onsubmit="submitContactForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  
     <!-- Footer Section -->
     <footer class="footer">
       <!-- Social Media Icons Block -->
       <div class="social-icons">
-        <a href="#add-your-link-here"><i class="fa-brands fa-facebook fa-2x" style="color: #e6e6e6;"></i></a>
-        <a href="#add-your-link-here"><i class="fa-brands fa-x-twitter fa-2x" style="color: #e6e6e6;"></i></a>
-        <a href="#add-your-link-here"><i class="fa-brands fa-instagram fa-2x" style="color: #e6e6e6;"></i></a>
-        </div>
+        <a href="https://www.facebook.com/your-facebook-page"><i class="fa-brands fa-facebook fa-2x" style="color: #e6e6e6;"></i></a>
+        <a href="https://twitter.com/your-twitter-handle"><i class="fa-brands fa-x-twitter fa-2x" style="color: #e6e6e6;"></i></a>
+        <a href="https://www.instagram.com/your-instagram-handle"><i class="fa-brands fa-instagram fa-2x" style="color: #e6e6e6;"></i></a>
+      </div>
       <!-- Copyright Information -->
-      <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
-    </footer>
-    
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Delicious Restaurant. All rights reserved.</p>
+</footer>
     <!-- Script Tag -->
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module" defer></script>
 </body>
 </html>

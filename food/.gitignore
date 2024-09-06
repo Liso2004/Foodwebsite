@@ -3,13 +3,13 @@
 # Ignore a single file
 file.txt
 .env
-
 # Ignore a folder and all its contents
 folder/
-node_modules
+node_modules/
 
 # Ignore files with a specific extension
 *.tmp
+*
 
 # Ignore files with a specific pattern
 *_backup.*
